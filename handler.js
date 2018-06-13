@@ -1,7 +1,6 @@
 'use strict';
 
 module.exports.helloWorld = (event, context, callback) => {
-  test.key;
   const response = {
     statusCode: 200,
     headers: {
