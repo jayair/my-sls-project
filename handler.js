@@ -8,6 +8,7 @@ module.exports.helloWorld = (event, context, callback) => {
     },
     body: `This a demo app: ${process.env.MESSAGE}, secret is ${process.env.MY_SECRET}.\n`
   };
+  console.log(event);
 
   callback(null, response);
 };
