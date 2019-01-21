@@ -8,7 +8,7 @@ provider:
 
 functions:
   helloWorld:
-    handler: handler.helloWorld
+    handler: handler1.helloWorld
     events:
       - http:
           path: /
