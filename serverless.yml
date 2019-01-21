@@ -2,13 +2,13 @@ service: serverless-hello-world
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs6.11
   environment:
     MESSAGE: "I am ${opt:stage}"
 
 functions:
   helloWorld:
-    handler: handler1.helloWorld
+    handler: handler.helloWorld
     events:
       - http:
           path: /
