@@ -7,7 +7,7 @@ module.exports.helloWorld = (event, context, callback) => {
       'Access-Control-Allow-Origin': '*',
     },
     // body: `This is a demo app: ${process.env.MESSAGE}, secret is ${process.env.MY_SECRET}.\n`
-    body: `This is a demo app`
+    body: `This is a demo app running in ${process.env.MESSAGE}.`
   };
   
   callback(null, response);
