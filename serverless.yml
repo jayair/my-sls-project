@@ -2,9 +2,10 @@ service: serverless-hello-world
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs10.x
+  stage: ${opt:stage, 'dev'}
   environment:
-    MESSAGE: "I am ${opt:stage}"
+    MESSAGE: "I am ${self:provider.stage}"
 
 functions:
   helloWorld:

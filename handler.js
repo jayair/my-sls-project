@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports.helloWorld = (event, context, callback) => {
+export default function helloWorld(event, context, callback) {
   const response = {
     statusCode: 200,
     headers: {
@@ -11,4 +9,4 @@ module.exports.helloWorld = (event, context, callback) => {
   };
   
   callback(null, response);
-};
+}
