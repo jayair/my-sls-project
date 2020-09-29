@@ -1,0 +1,2 @@
+before_compile:
+  - npm config set unsafe-perm true
