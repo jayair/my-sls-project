@@ -1,8 +1,6 @@
 'use strict';
 
 module.exports.helloWorld = (event, context, callback) => {
-  context.callbackWaitsForEmptyEventLoop = false;
-  setTimeout(() => console.log('done timer'), 10000);
   const response = {
     statusCode: 200,
     headers: {
